@@ -7,7 +7,7 @@ body{
     font-family: Roboto;
 }
 #phone{
-    margin-top: 100px;
+    margin: 100px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,21 +76,18 @@ body{
     align-items: center;
     font-family: Arial, sans-serif;
     margin-bottom: 15px;
-  }
-
+}
   .switch {
     position: relative;
     display: inline-block;
     width: 40px;
     height: 20px;
   }
-  
   .switch input {
     opacity: 0;
     width: 0;
     height: 0;
   }
-  
   .slider {
     position: absolute;
     cursor: pointer;
@@ -102,7 +99,6 @@ body{
     transition: .4s;
     border-radius: 20px;
   }
-  
   .slider:before {
     position: absolute;
     content: "";
@@ -114,11 +110,9 @@ body{
     transition: .4s;
     border-radius: 50%;
   }
-  
   input:checked + .slider {
-    background-color: #4c90ff; /* Синий цвет для активного состояния */
+    background-color: #4c90ff;
   }
-  
   input:checked + .slider:before {
     transform: translateX(20px);
   }
