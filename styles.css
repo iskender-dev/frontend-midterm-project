@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Roboto;
+}
+#phone{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.notch {
+    width: 200px;
+    height: 40px;
+    background-color: #000;
+    border-radius: 0 0 20px 20px;
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+.wrapper{
+    border: 10px solid black;
+    width: 30%;
+    height: 900px;
+    border-radius: 60px;
+    background: linear-gradient(210deg,#4c90ff 43%,  #f5f5f5  -61%)
+    
+}
+.cardImg{
+    width: 500px;
+    height: 300px;
+    margin: 20px auto 0;
+}
+.cardImg img{
+    width: 100%;
+}
+.phoneTitle{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 34px;
+    font-weight: bold;
+    color: #fff;
+}
+.buttonSection{
+    margin: 50px;
+}
+.buttonitem{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.buttonText{
+    display: flex;
+    align-items: center;
+}
+
+.buttonImg{
+    padding: 20px;
+}
+.buttonTitle{
+    font-size: 20px;
+    font-weight: bold;
+}
+.buttondescr{
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(184, 184, 184);
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin-bottom: 15px;
+  }
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 20px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #4c90ff; /* Синий цвет для активного состояния */
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(20px);
+  }
+  
